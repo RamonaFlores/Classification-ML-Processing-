@@ -28,9 +28,23 @@ Classification-ML-Processing-/
 │   └── adult_income_sample.csv          # Datos de entrada
 ├── src/
 │   ├── adult_income_classification.py   # Script principal
-│   └── notebook_analysis.ipynb          # Análisis interactivo
+│   ├── notebook_analysis.ipynb          # Análisis interactivo
+│   ├── simple_demo.py                   # Demo simplificado
+│   └── metrics_extractor.py             # Extractor de métricas para dashboard
+├── dashboard_data/                      # Métricas y datos para dashboard
+│   ├── complete_metrics.json            # Métricas completas
+│   ├── kpi_metrics.json                 # KPIs principales
+│   ├── chart_data.json                  # Datos para gráficos
+│   ├── findings.json                    # Findings y insights
+│   ├── executive_summary.json           # Resumen ejecutivo
+│   └── README_DASHBOARD.md              # Documentación del dashboard
+├── Dashboard/                           # Dashboard web (React/TypeScript)
+│   ├── src/
+│   │   └── App.tsx                      # Componente principal
+│   ├── package.json                     # Dependencias del dashboard
+│   └── public/                          # Archivos estáticos
 ├── models/                              # Modelos entrenados (generado)
-├── requirements.txt                     # Dependencias
+├── requirements.txt                     # Dependencias Python
 └── README.MD                           # Documentación
 ```
 
@@ -83,6 +97,16 @@ python src/adult_income_classification.py
 ### Opción 2: Jupyter Notebook (Recomendado)
 ```bash
 jupyter notebook src/notebook_analysis.ipynb
+```
+
+### Opción 3: Demo Simplificado
+```bash
+python src/simple_demo.py
+```
+
+### Opción 4: Generar Métricas para Dashboard
+```bash
+python src/metrics_extractor.py
 ```
 
 ## 🔧 Proceso de Machine Learning
