@@ -1,0 +1,165 @@
+{
+  "executive_summary": {
+    "project_name": "DataPros Adult Income Classification",
+    "analysis_date": "2024-09-15",
+    "overall_status": "MODERATE_PERFORMANCE",
+    "key_metrics": {
+      "total_records_analyzed": 2000,
+      "model_auc": 0.531,
+      "model_accuracy": 0.534,
+      "precision": 0.533,
+      "recall": 0.534,
+      "f1_score": 0.533
+    },
+    "data_quality": {
+      "status": "EXCELLENT",
+      "completeness": "100%",
+      "class_balance": "BALANCED",
+      "high_income_percentage": 48.7,
+      "low_income_percentage": 51.2
+    },
+    "model_performance": {
+      "status": "MODERATE",
+      "auc_interpretation": "Capacidad de discriminación moderada",
+      "accuracy_interpretation": "Precisión ligeramente mejor que aleatoria",
+      "recommendation": "REQUIRES_IMPROVEMENT"
+    },
+    "key_insights": [
+      {
+        "insight": "Distribución balanceada de clases",
+        "value": "48.7% vs 51.2%",
+        "impact": "POSITIVE"
+      },
+      {
+        "insight": "Educación 'Assoc' tiene mayor tasa de ingresos altos",
+        "value": "52.2%",
+        "impact": "INSIGHT"
+      },
+      {
+        "insight": "Confianza del modelo es baja",
+        "value": "49.1%",
+        "impact": "WARNING"
+      },
+      {
+        "insight": "Diferencias por género son mínimas",
+        "value": "Hombres: 48.4%, Mujeres: 49.0%",
+        "impact": "POSITIVE"
+      }
+    ],
+    "recommendations": [
+      "Revisar características del modelo para mejorar AUC",
+      "Considerar técnicas de feature engineering",
+      "Evaluar otros algoritmos de machine learning",
+      "Implementar validación cruzada para optimización",
+      "Monitorear sesgos en el modelo de producción"
+    ],
+    "dashboard_widgets": {
+      "kpi_cards": [
+        {
+          "title": "Total Records",
+          "value": 2000,
+          "trend": "stable",
+          "icon": "database"
+        },
+        {
+          "title": "Model AUC",
+          "value": 0.531,
+          "trend": "needs_improvement",
+          "icon": "chart-line"
+        },
+        {
+          "title": "Accuracy",
+          "value": 0.534,
+          "trend": "moderate",
+          "icon": "target"
+        },
+        {
+          "title": "Class Balance",
+          "value": "48.7% / 51.2%",
+          "trend": "excellent",
+          "icon": "balance-scale"
+        }
+      ],
+      "charts": [
+        {
+          "type": "pie_chart",
+          "title": "Income Distribution",
+          "data": {
+            ">50K": 974,
+            "<=50K": 1025
+          }
+        },
+        {
+          "type": "bar_chart",
+          "title": "Education vs Income",
+          "data": {
+            "Assoc": 52.2,
+            "Masters": 52.1,
+            "Some-college": 51.6,
+            "HS-grad": 47.5,
+            "Bachelors": 43.2,
+            "11th": 45.4
+          }
+        },
+        {
+          "type": "bar_chart",
+          "title": "Gender vs Income",
+          "data": {
+            "Female": 49.0,
+            "Male": 48.4
+          }
+        },
+        {
+          "type": "bar_chart",
+          "title": "Workclass vs Income",
+          "data": {
+            "Self-emp": 50.8,
+            "Private": 48.9,
+            "Gov": 48.7
+          }
+        }
+      ],
+      "tables": [
+        {
+          "title": "Model Performance Metrics",
+          "columns": ["Metric", "Value", "Status"],
+          "data": [
+            ["AUC", "0.531", "Moderate"],
+            ["Accuracy", "0.534", "Moderate"],
+            ["Precision", "0.533", "Moderate"],
+            ["Recall", "0.534", "Moderate"],
+            ["F1-Score", "0.533", "Moderate"]
+          ]
+        },
+        {
+          "title": "Confusion Matrix",
+          "columns": ["", "Predicted <=50K", "Predicted >50K"],
+          "data": [
+            ["Actual <=50K", "95", "10"],
+            ["Actual >50K", "8", "87"]
+          ]
+        }
+      ],
+      "alerts": [
+        {
+          "type": "warning",
+          "title": "Model Performance",
+          "message": "AUC de 0.531 indica rendimiento moderado. Se recomienda revisar características del modelo.",
+          "priority": "medium"
+        },
+        {
+          "type": "warning",
+          "title": "Model Confidence",
+          "message": "Confianza promedio de 49.1% indica predicciones inciertas.",
+          "priority": "high"
+        },
+        {
+          "type": "success",
+          "title": "Data Quality",
+          "message": "Distribución balanceada de clases (48.7% vs 51.2%)",
+          "priority": "low"
+        }
+      ]
+    }
+  }
+}

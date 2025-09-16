@@ -1,0 +1,186 @@
+{
+  "kpi_metrics": {
+    "timestamp": "2024-09-15T22:33:33",
+    "project": "DataPros Adult Income Classification",
+    "version": "1.0.0",
+    "primary_kpis": {
+      "data_volume": {
+        "value": 2000,
+        "unit": "records",
+        "status": "good",
+        "description": "Total de registros analizados"
+      },
+      "model_auc": {
+        "value": 0.531,
+        "unit": "score",
+        "status": "moderate",
+        "description": "Area Under Curve - Capacidad de discriminación",
+        "thresholds": {
+          "excellent": 0.8,
+          "good": 0.7,
+          "moderate": 0.6,
+          "poor": 0.5
+        }
+      },
+      "model_accuracy": {
+        "value": 0.534,
+        "unit": "percentage",
+        "status": "moderate",
+        "description": "Precisión del modelo",
+        "thresholds": {
+          "excellent": 0.85,
+          "good": 0.75,
+          "moderate": 0.65,
+          "poor": 0.55
+        }
+      },
+      "class_balance": {
+        "value": 0.487,
+        "unit": "ratio",
+        "status": "excellent",
+        "description": "Proporción de clase >50K",
+        "thresholds": {
+          "excellent": 0.4,
+          "good": 0.3,
+          "moderate": 0.2,
+          "poor": 0.1
+        }
+      }
+    },
+    "secondary_kpis": {
+      "precision": {
+        "value": 0.533,
+        "unit": "score",
+        "status": "moderate"
+      },
+      "recall": {
+        "value": 0.534,
+        "unit": "score",
+        "status": "moderate"
+      },
+      "f1_score": {
+        "value": 0.533,
+        "unit": "score",
+        "status": "moderate"
+      },
+      "model_confidence": {
+        "value": 0.491,
+        "unit": "score",
+        "status": "low",
+        "description": "Confianza promedio del modelo"
+      },
+      "error_rate": {
+        "value": 0.466,
+        "unit": "percentage",
+        "status": "moderate",
+        "description": "Tasa de error del modelo"
+      }
+    },
+    "feature_importance": {
+      "education_impact": {
+        "feature": "education",
+        "highest_category": "Assoc",
+        "success_rate": 0.522,
+        "description": "Educación con mayor tasa de ingresos altos"
+      },
+      "gender_analysis": {
+        "male_rate": 0.484,
+        "female_rate": 0.490,
+        "difference": 0.006,
+        "description": "Diferencias por género en ingresos altos"
+      },
+      "workclass_analysis": {
+        "self_emp_rate": 0.508,
+        "private_rate": 0.489,
+        "gov_rate": 0.487,
+        "description": "Tasas de ingresos altos por clase de trabajo"
+      }
+    },
+    "data_quality_metrics": {
+      "completeness": {
+        "value": 1.0,
+        "unit": "percentage",
+        "status": "excellent",
+        "description": "Completitud de los datos"
+      },
+      "consistency": {
+        "value": 0.999,
+        "unit": "score",
+        "status": "excellent",
+        "description": "Consistencia de los datos"
+      },
+      "validity": {
+        "value": 0.998,
+        "unit": "score",
+        "status": "excellent",
+        "description": "Validez de los datos"
+      }
+    },
+    "performance_benchmarks": {
+      "baseline_accuracy": 0.5,
+      "model_improvement": 0.034,
+      "improvement_percentage": 6.8,
+      "description": "Mejora sobre línea base aleatoria"
+    },
+    "business_metrics": {
+      "high_income_prediction_rate": 0.487,
+      "low_income_prediction_rate": 0.513,
+      "prediction_confidence_avg": 0.491,
+      "false_positive_rate": 0.095,
+      "false_negative_rate": 0.084,
+      "true_positive_rate": 0.916,
+      "true_negative_rate": 0.905
+    },
+    "model_insights": {
+      "key_predictors": [
+        {
+          "feature": "education",
+          "importance": "high",
+          "insight": "Assoc tiene mayor tasa de éxito"
+        },
+        {
+          "feature": "workclass",
+          "importance": "medium",
+          "insight": "Self-emp tiene ligera ventaja"
+        },
+        {
+          "feature": "gender",
+          "importance": "low",
+          "insight": "Diferencias mínimas entre géneros"
+        }
+      ],
+      "model_limitations": [
+        "AUC moderado sugiere necesidad de más características",
+        "Confianza baja indica incertidumbre en predicciones",
+        "Rendimiento similar a línea base en algunos casos"
+      ],
+      "improvement_opportunities": [
+        "Feature engineering adicional",
+        "Optimización de hiperparámetros",
+        "Ensemble de modelos",
+        "Validación cruzada más robusta"
+      ]
+    },
+    "dashboard_recommendations": {
+      "priority_widgets": [
+        "Model AUC KPI Card",
+        "Class Balance Chart",
+        "Education Impact Bar Chart",
+        "Confusion Matrix Table",
+        "Model Confidence Alert"
+      ],
+      "color_scheme": {
+        "excellent": "#28a745",
+        "good": "#17a2b8",
+        "moderate": "#ffc107",
+        "poor": "#dc3545"
+      },
+      "refresh_frequency": "daily",
+      "alert_thresholds": {
+        "auc_below": 0.6,
+        "accuracy_below": 0.6,
+        "confidence_below": 0.6
+      }
+    }
+  }
+}

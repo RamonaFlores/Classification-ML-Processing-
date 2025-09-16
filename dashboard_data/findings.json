@@ -1,0 +1,30 @@
+[
+  {
+    "category": "Data Quality",
+    "title": "Distribuci\u00f3n Balanceada de Clases",
+    "description": "Las clases est\u00e1n bien balanceadas: 48.7% >50K vs 51.2% <=50K",
+    "impact": "positive",
+    "recommendation": "No se requiere balanceo de clases"
+  },
+  {
+    "category": "Model Performance",
+    "title": "Rendimiento Moderado del Modelo",
+    "description": "AUC de 0.531 indica capacidad de discriminaci\u00f3n moderada",
+    "impact": "warning",
+    "recommendation": "Revisar caracter\u00edsticas y par\u00e1metros del modelo"
+  },
+  {
+    "category": "Feature Analysis",
+    "title": "Educaci\u00f3n con Mayor Impacto en Ingresos",
+    "description": "'Assoc' tiene la mayor tasa de ingresos >50K: 52.2%",
+    "impact": "insight",
+    "recommendation": "Considerar esta variable como predictor clave"
+  },
+  {
+    "category": "Model Confidence",
+    "title": "Baja Confianza del Modelo",
+    "description": "Confianza promedio de 0.491 indica predicciones inciertas",
+    "impact": "warning",
+    "recommendation": "Revisar modelo y caracter\u00edsticas"
+  }
+]

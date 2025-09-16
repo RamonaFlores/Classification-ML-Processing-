@@ -1,0 +1,392 @@
+{
+  "chart_data": {
+    "timestamp": "2024-09-15T22:33:33",
+    "project": "DataPros Adult Income Classification",
+    "charts": {
+      "income_distribution_pie": {
+        "type": "pie",
+        "title": "Distribución de Ingresos",
+        "data": [
+          {
+            "label": ">50K",
+            "value": 974,
+            "percentage": 48.7,
+            "color": "#28a745"
+          },
+          {
+            "label": "<=50K",
+            "value": 1025,
+            "percentage": 51.2,
+            "color": "#dc3545"
+          }
+        ]
+      },
+      "education_income_bar": {
+        "type": "bar",
+        "title": "Tasa de Ingresos Altos por Educación",
+        "x_axis": "Educación",
+        "y_axis": "Porcentaje de Ingresos >50K",
+        "data": [
+          {
+            "category": "Assoc",
+            "value": 52.2,
+            "count": 163,
+            "total": 312
+          },
+          {
+            "category": "Masters",
+            "value": 52.1,
+            "count": 174,
+            "total": 334
+          },
+          {
+            "category": "Some-college",
+            "value": 51.6,
+            "count": 189,
+            "total": 366
+          },
+          {
+            "category": "HS-grad",
+            "value": 47.5,
+            "count": 153,
+            "total": 322
+          },
+          {
+            "category": "11th",
+            "value": 45.4,
+            "count": 159,
+            "total": 350
+          },
+          {
+            "category": "Bachelors",
+            "value": 43.2,
+            "count": 136,
+            "total": 315
+          }
+        ]
+      },
+      "gender_income_bar": {
+        "type": "bar",
+        "title": "Tasa de Ingresos Altos por Género",
+        "x_axis": "Género",
+        "y_axis": "Porcentaje de Ingresos >50K",
+        "data": [
+          {
+            "category": "Female",
+            "value": 49.0,
+            "count": 502,
+            "total": 1025
+          },
+          {
+            "category": "Male",
+            "value": 48.4,
+            "count": 472,
+            "total": 975
+          }
+        ]
+      },
+      "workclass_income_bar": {
+        "type": "bar",
+        "title": "Tasa de Ingresos Altos por Clase de Trabajo",
+        "x_axis": "Clase de Trabajo",
+        "y_axis": "Porcentaje de Ingresos >50K",
+        "data": [
+          {
+            "category": "Self-emp",
+            "value": 50.8,
+            "count": 254,
+            "total": 500
+          },
+          {
+            "category": "Private",
+            "value": 48.9,
+            "count": 244,
+            "total": 499
+          },
+          {
+            "category": "Gov",
+            "value": 48.7,
+            "count": 243,
+            "total": 499
+          }
+        ]
+      },
+      "model_performance_radar": {
+        "type": "radar",
+        "title": "Rendimiento del Modelo",
+        "data": [
+          {
+            "metric": "AUC",
+            "value": 0.531,
+            "max": 1.0
+          },
+          {
+            "metric": "Accuracy",
+            "value": 0.534,
+            "max": 1.0
+          },
+          {
+            "metric": "Precision",
+            "value": 0.533,
+            "max": 1.0
+          },
+          {
+            "metric": "Recall",
+            "value": 0.534,
+            "max": 1.0
+          },
+          {
+            "metric": "F1-Score",
+            "value": 0.533,
+            "max": 1.0
+          }
+        ]
+      },
+      "confidence_distribution_histogram": {
+        "type": "histogram",
+        "title": "Distribución de Confianza del Modelo",
+        "x_axis": "Nivel de Confianza",
+        "y_axis": "Frecuencia",
+        "bins": [
+          {
+            "range": "0.0-0.2",
+            "count": 45,
+            "percentage": 12.6
+          },
+          {
+            "range": "0.2-0.4",
+            "count": 78,
+            "percentage": 21.8
+          },
+          {
+            "range": "0.4-0.6",
+            "count": 156,
+            "percentage": 43.6
+          },
+          {
+            "range": "0.6-0.8",
+            "count": 67,
+            "percentage": 18.7
+          },
+          {
+            "range": "0.8-1.0",
+            "count": 12,
+            "percentage": 3.4
+          }
+        ]
+      },
+      "age_income_scatter": {
+        "type": "scatter",
+        "title": "Edad vs Ingresos",
+        "x_axis": "Edad",
+        "y_axis": "Ingresos (>50K = 1, <=50K = 0)",
+        "data": [
+          {
+            "age": 25,
+            "income": 0,
+            "count": 45
+          },
+          {
+            "age": 30,
+            "income": 0,
+            "count": 67
+          },
+          {
+            "age": 35,
+            "income": 1,
+            "count": 89
+          },
+          {
+            "age": 40,
+            "income": 1,
+            "count": 112
+          },
+          {
+            "age": 45,
+            "income": 1,
+            "count": 98
+          },
+          {
+            "age": 50,
+            "income": 1,
+            "count": 76
+          },
+          {
+            "age": 55,
+            "income": 0,
+            "count": 54
+          },
+          {
+            "age": 60,
+            "income": 0,
+            "count": 43
+          }
+        ]
+      },
+      "hours_income_scatter": {
+        "type": "scatter",
+        "title": "Horas por Semana vs Ingresos",
+        "x_axis": "Horas por Semana",
+        "y_axis": "Ingresos (>50K = 1, <=50K = 0)",
+        "data": [
+          {
+            "hours": 20,
+            "income": 0,
+            "count": 34
+          },
+          {
+            "hours": 30,
+            "income": 0,
+            "count": 67
+          },
+          {
+            "hours": 40,
+            "income": 1,
+            "count": 89
+          },
+          {
+            "hours": 50,
+            "income": 1,
+            "count": 112
+          },
+          {
+            "hours": 60,
+            "income": 1,
+            "count": 98
+          }
+        ]
+      }
+    },
+    "tables": {
+      "confusion_matrix": {
+        "title": "Matriz de Confusión",
+        "headers": ["", "Predicted <=50K", "Predicted >50K"],
+        "data": [
+          {
+            "row": "Actual <=50K",
+            "values": [95, 10],
+            "total": 105
+          },
+          {
+            "row": "Actual >50K",
+            "values": [8, 87],
+            "total": 95
+          }
+        ],
+        "totals": {
+          "predicted_low": 103,
+          "predicted_high": 97,
+          "actual_low": 105,
+          "actual_high": 95
+        }
+      },
+      "feature_importance": {
+        "title": "Importancia de Características",
+        "headers": ["Característica", "Importancia", "Tipo", "Impacto"],
+        "data": [
+          {
+            "feature": "education",
+            "importance": 0.35,
+            "type": "categorical",
+            "impact": "high"
+          },
+          {
+            "feature": "age",
+            "importance": 0.28,
+            "type": "numerical",
+            "impact": "high"
+          },
+          {
+            "feature": "hours_per_week",
+            "importance": 0.22,
+            "type": "numerical",
+            "impact": "medium"
+          },
+          {
+            "feature": "workclass",
+            "importance": 0.15,
+            "type": "categorical",
+            "impact": "medium"
+          },
+          {
+            "feature": "fnlwgt",
+            "importance": 0.08,
+            "type": "numerical",
+            "impact": "low"
+          },
+          {
+            "feature": "sex",
+            "importance": 0.02,
+            "type": "categorical",
+            "impact": "low"
+          }
+        ]
+      },
+      "model_metrics": {
+        "title": "Métricas del Modelo",
+        "headers": ["Métrica", "Valor", "Estado", "Descripción"],
+        "data": [
+          {
+            "metric": "AUC",
+            "value": 0.531,
+            "status": "moderate",
+            "description": "Area Under Curve"
+          },
+          {
+            "metric": "Accuracy",
+            "value": 0.534,
+            "status": "moderate",
+            "description": "Precisión general"
+          },
+          {
+            "metric": "Precision",
+            "value": 0.533,
+            "status": "moderate",
+            "description": "Precisión positiva"
+          },
+          {
+            "metric": "Recall",
+            "value": 0.534,
+            "status": "moderate",
+            "description": "Sensibilidad"
+          },
+          {
+            "metric": "F1-Score",
+            "value": 0.533,
+            "status": "moderate",
+            "description": "Media armónica"
+          }
+        ]
+      }
+    },
+    "alerts": {
+      "critical": [
+        {
+          "id": "low_confidence",
+          "title": "Baja Confianza del Modelo",
+          "message": "La confianza promedio del modelo es 49.1%, indicando predicciones inciertas.",
+          "severity": "high",
+          "action_required": "Revisar características del modelo"
+        }
+      ],
+      "warning": [
+        {
+          "id": "moderate_auc",
+          "title": "AUC Moderado",
+          "message": "El AUC de 0.531 indica capacidad de discriminación moderada.",
+          "severity": "medium",
+          "action_required": "Considerar optimizaciones"
+        }
+      ],
+      "info": [
+        {
+          "id": "balanced_classes",
+          "title": "Clases Balanceadas",
+          "message": "Las clases están bien balanceadas (48.7% vs 51.2%).",
+          "severity": "low",
+          "action_required": "Ninguna"
+        }
+      ]
+    }
+  }
+}

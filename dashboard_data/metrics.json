@@ -1,0 +1,116 @@
+{
+  "data_overview": {
+    "total_records": 2000,
+    "total_features": 7,
+    "data_quality": "high"
+  },
+  "target_distribution": {
+    "high_income_count": 974,
+    "low_income_count": 1025,
+    "high_income_percentage": 48.699999999999996,
+    "low_income_percentage": 51.24999999999999,
+    "class_balance": "balanced"
+  },
+  "gender_analysis": {
+    "Male": {
+      "<=50K": 502,
+      ">50K": 472,
+      "<=50K  ": 1
+    },
+    "Female": {
+      "<=50K": 523,
+      ">50K": 502
+    }
+  },
+  "education_analysis": {
+    "Bachelors": {
+      "<=50K": 179,
+      ">50K": 136,
+      "<=50K  ": 1
+    },
+    "HS-grad": {
+      "<=50K": 169,
+      ">50K": 153
+    },
+    "Some-college": {
+      "<=50K": 177,
+      ">50K": 189
+    },
+    "Assoc": {
+      "<=50K": 149,
+      ">50K": 163
+    },
+    "11th": {
+      ">50K": 159,
+      "<=50K": 191
+    },
+    "Masters": {
+      "<=50K": 160,
+      ">50K": 174
+    }
+  },
+  "workclass_analysis": {
+    "Gov": {
+      "<=50K": 331,
+      ">50K": 306
+    },
+    "Private": {
+      "<=50K": 375,
+      ">50K": 348
+    },
+    "Self-emp": {
+      "<=50K  ": 1,
+      "<=50K": 319,
+      ">50K": 320
+    }
+  },
+  "numeric_statistics": {
+    "mean": {
+      "age": 41.7435,
+      "fnlwgt": 213280.405,
+      "hours_per_week": 40.0875
+    },
+    "stddev": {
+      "age": 13.887769540909401,
+      "fnlwgt": 110668.86162896988,
+      "hours_per_week": 11.90465052414606
+    },
+    "min": {
+      "age": 18.0,
+      "fnlwgt": 20129.0,
+      "hours_per_week": 20.0
+    },
+    "max": {
+      "age": 65.0,
+      "fnlwgt": 399891.0,
+      "hours_per_week": 60.0
+    }
+  },
+  "model_performance": {
+    "auc": 0.5309210526315788,
+    "accuracy": 0.5335195530726257,
+    "precision": 0.5248459004410014,
+    "recall": 0.5335195530726258,
+    "f1_score": 0.49373846716156045,
+    "confusion_matrix": {
+      "1_0": 128,
+      "0_0": 151,
+      "1_1": 40,
+      "0_1": 39
+    },
+    "train_records": 1642,
+    "test_records": 358
+  },
+  "confidence_analysis": {
+    "mean": 0.49110023162035393,
+    "stddev": 0.014746216157425721,
+    "min": 0.461669804766481,
+    "max": 0.5187678364175947
+  },
+  "error_analysis": {
+    "correct_predictions": 191,
+    "total_predictions": 358,
+    "error_rate": 0.4664804469273743,
+    "success_rate": 0.5335195530726257
+  }
+}

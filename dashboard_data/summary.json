@@ -1,0 +1,8 @@
+{
+  "total_records": 2000,
+  "model_auc": 0.5309210526315788,
+  "model_accuracy": 0.5335195530726257,
+  "total_findings": 4,
+  "critical_findings": 2,
+  "positive_findings": 1
+}
